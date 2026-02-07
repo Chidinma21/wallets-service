@@ -25,7 +25,7 @@ Wallet.init({
 export class TransactionLog extends Model {
   declare idempotencyKey: string;
   declare status: 'PENDING' | 'COMPLETED' | 'FAILED';
-  declare metadata: any;
+  declare metadata: unknown;
 }
 
 TransactionLog.init({
